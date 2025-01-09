@@ -24,4 +24,7 @@ source $SCRIPT_DIR/brew/setup.sh
 #
 source $SCRIPT_DIR/mise/setup.sh
 
+source $HOME/.zshrc
+
+echo "インストールが完了しました。"
 

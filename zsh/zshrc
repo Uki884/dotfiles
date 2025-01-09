@@ -1,3 +1,5 @@
+# Amazon Q pre block. Keep at the top of this file.
+[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
 alias drm="docker system prune"export PATH="/opt/homebrew/bin:$PATH"
 
 export PATH="$PATH:$HOME/.local/share/mise/installs/node/latest/bin"
@@ -7,3 +9,6 @@ export PATH="/opt/homebrew/bin:$PATH"
 
 # mise
 export PATH="$HOME/.local/share/mise/shims:$PATH"
+
+# Amazon Q post block. Keep at the bottom of this file.
+[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
