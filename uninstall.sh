@@ -21,7 +21,8 @@ fi
 #
 # Git
 #
-rm -fr $HOME/.config/git
+/bin/rm -f $HOME/.gitconfig
+/bin/rm -f $HOME/.gitignore_global
 
 #
 # Homebrew

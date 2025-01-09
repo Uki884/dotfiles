@@ -5,16 +5,14 @@ set -veuo pipefail
 SCRIPT_DIR=$(perl -MCwd=realpath -le 'print realpath shift' "$0/..")
 
 #
-# Macの設定
+# Mac Settings
 #
 source $SCRIPT_DIR/mac/setup.sh
-
 
 #
 # Homebrew
 #
 source $SCRIPT_DIR/brew/setup.sh
-
 
 #
 # mise
