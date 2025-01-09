@@ -2,6 +2,8 @@ alias drm="docker system prune"export PATH="/opt/homebrew/bin:$PATH"
 
 export PATH="$PATH:$HOME/.local/share/mise/installs/node/latest/bin"
 
+# Homebrew
 export PATH="/opt/homebrew/bin:$PATH"
 
-eval "$(~/.local/bin/mise activate zsh)"
+# mise
+export PATH="$HOME/.local/share/mise/shims:$PATH"

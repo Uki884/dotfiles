@@ -4,15 +4,6 @@ set +e
 
 echo "Homebrewをインストールします..."
 
-# Homebrew、miseのPATHを ~/.zshrc に追記
-if ! grep -q 'export PATH="/opt/homebrew/bin:$PATH"' $HOME/.zshrc; then
-    echo 'export PATH="/opt/homebrew/bin:$PATH"' >> $HOME/.zshrc
-    echo "HomebrewのPATHを追加しました。"
-fi
-
-# ~/.zshrc を読み込んで反映
-source $HOME/.zshrc
-
 # Homebrew のインストール
 if ! which brew >/dev/null 2>&1; then
   echo "Homebrewをインストール中..."
