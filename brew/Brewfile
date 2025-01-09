@@ -1,0 +1,24 @@
+
+cask_args appdir: "/Applications"
+
+# アプリ
+cask "visual-studio-code" # コードエディタ
+cask "cursor" # コードエディタ
+cask "chatgpt" # チャットAI
+cask "google-chrome" # ブラウザ
+cask "clipy" # クリップボード履歴
+cask "docker" # docker
+cask "raycast" # アプリ起動
+cask "orbstack" # docker
+cask "amazon-q" # CLI
+cask "tableplus" # DBツール
+cask "cmd-eikana" # キーボードショートカット
+cask "meetingbar"
+cask "notion"
+
+# ツール
+brew "difftastic" # git diffをリッチに表示
+brew "tree" # ファイルツリー
+brew "coreutils" # コアユーティリティ
+
+
