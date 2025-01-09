@@ -2,10 +2,12 @@
 
 echo "miseをインストールします..."
 
-if ! grep -q 'export PATH="$PATH:$HOME/.local/share/mise/installs/node/latest/bin"' $HOME/.zshrc; then
-    echo 'export PATH="$PATH:$HOME/.local/share/mise/installs/node/latest/bin"' >> $HOME/.zshrc
+if ! grep -Fxq 'eval "$(~/.local/bin/mise activate zsh)"' "$HOME/.zshrc"; then
+    echo 'eval "$(~/.local/bin/mise activate zsh)"' >> "$HOME/.zshrc"
     echo "miseのPATHを追加しました。"
-    source $HOME/.zshrc
+    source "$HOME/.zshrc"
+else
+    echo "既に 'eval \"$(~/.local/bin/mise activate zsh)\"' が .zshrc に存在します。"
 fi
 
 if [[ ! -e "$HOME/.local/bin/mise" ]]; then
