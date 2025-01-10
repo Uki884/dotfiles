@@ -8,16 +8,16 @@ fi
 echo "Macの設定を行います..."
 
 # Show bluetooth in the menu bar
-defaults write com.apple.controlcenter NSStatusItem Visible Bluetooth -bool true
+defaults write com.apple.controlcenter "NSStatusItem Visible Bluetooth" -bool true
 
 # Avoid creating `.DS_Store` files on network volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 # Set initial key repeat rate
-defaults write InitialKeyRepeat -int 10
+defaults write -g InitialKeyRepeat -int 11
 
 # Set keyboard repeat rate
-defaults write KeyRepeat -int 1
+defaults write -g KeyRepeat -int 1
 
 defaults write com.apple.mouse.tapBehavior -int 1
 

@@ -15,6 +15,11 @@ source $SCRIPT_DIR/mac/setup.sh
 source $SCRIPT_DIR/zsh/setup.sh
 
 #
+# Git
+#
+source $SCRIPT_DIR/git/setup.sh
+
+#
 # Homebrew
 #
 source $SCRIPT_DIR/brew/setup.sh
